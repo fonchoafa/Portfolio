@@ -1,0 +1,192 @@
+.home {
+  padding-top: 80px; /* Offset for fixed navbar */
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #0a192f;
+  color: #ccd6f6;
+  padding: 0 2rem;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  gap: 4rem;
+}
+
+.textContent {
+  flex: 1;
+}
+
+.heading {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.nameHighlight {
+  color: #64ffda;
+}
+
+.subheading {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #8892b0;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.primaryButton {
+  background-color: #64ffda;
+  color: #0a192f;
+  padding: 1rem 1.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid #64ffda;
+}
+
+.primaryButton:hover {
+  background-color: transparent;
+  color: #64ffda;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #64ffda;
+  padding: 1rem 1.8rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid #64ffda;
+}
+
+.secondaryButton:hover {
+  background-color: rgba(100, 255, 218, 0.1);
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profileImage {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #64ffda;
+  box-shadow: 0 0 30px rgba(100, 255, 218, 0.2);
+}
+
+/* About Preview Section */
+.aboutPreview {
+  padding: 6rem 2rem;
+  background-color: #112240;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: #ccd6f6;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.serviceCard {
+  background-color: #0a192f;
+  padding: 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px);
+}
+
+.serviceCard h3 {
+  color: #64ffda;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.serviceCard p {
+  color: #8892b0;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 6rem;
+  }
+
+  .textContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description {
+    max-width: 100%;
+  }
+
+  .profileImage {
+    width: 280px;
+    height: 280px;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .subheading {
+    font-size: 1.3rem;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    text-align: center;
+  }
+}
