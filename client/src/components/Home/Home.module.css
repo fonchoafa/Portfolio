@@ -4,10 +4,10 @@
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
-  background-color: #0a192f;
+  background-color: #0a192f; /* Changed to #112240 */
   color: #ccd6f6;
   padding: 0 2rem;
 }
@@ -60,10 +60,10 @@
   color: #0a192f;
   padding: 1rem 1.8rem;
   border-radius: 4px;
-  text-decoration: none;
+  border: 1px solid #64ffda;
   font-weight: 600;
   transition: all 0.3s ease;
-  border: 1px solid #64ffda;
+  cursor: pointer;
 }
 
 .primaryButton:hover {
@@ -76,10 +76,10 @@
   color: #64ffda;
   padding: 1rem 1.8rem;
   border-radius: 4px;
-  text-decoration: none;
+  border: 1px solid #64ffda;
   font-weight: 600;
   transition: all 0.3s ease;
-  border: 1px solid #64ffda;
+  cursor: pointer;
 }
 
 .secondaryButton:hover {
@@ -101,16 +101,16 @@
   box-shadow: 0 0 30px rgba(100, 255, 218, 0.2);
 }
 
-/* About Preview Section */
+/* About Preview Section - REDUCED SPACING */
 .aboutPreview {
-  padding: 6rem 2rem;
-  background-color: #112240;
+  padding: 4rem 2rem; /* Reduced from 6rem */
+  background-color: #112240; /* Main background color */
 }
 
 .sectionTitle {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem; /* Reduced from 4rem */
   color: #ccd6f6;
 }
 
@@ -123,7 +123,7 @@
 }
 
 .serviceCard {
-  background-color: #0a192f;
+  background-color: #0a192f; /* Card background - darker blue */
   padding: 2rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -131,7 +131,7 @@
 }
 
 .serviceCard:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px); /* Reduced hover effect */
 }
 
 .serviceCard h3 {
@@ -150,7 +150,7 @@
   .heroContent {
     flex-direction: column;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 4rem; /* Reduced padding */
   }
 
   .textContent {
@@ -166,7 +166,11 @@
   .profileImage {
     width: 280px;
     height: 280px;
-    margin-top: 3rem;
+    margin-top: 2rem; /* Reduced margin */
+  }
+  
+  .aboutPreview {
+    padding: 3rem 1.5rem; /* Reduced padding for mobile */
   }
 }
 
@@ -188,5 +192,14 @@
   .secondaryButton {
     width: 100%;
     text-align: center;
+  }
+  
+  .aboutPreview {
+    padding: 2rem 1rem; /* Further reduced for mobile */
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 }

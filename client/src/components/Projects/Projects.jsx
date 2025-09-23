@@ -6,11 +6,11 @@ import styles from "./Projects.module.css";
 const projectsData = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce application with React, Node.js, and MongoDB. Features user authentication, product filtering, and payment integration.",
+    title: "Digital Real Estate Web App",
+    description: "A secure digital real estate platform where people can find and rent properties, make hotel reservations and book trusted service providers.",
     tags: ["React", "Node.js", "MongoDB", "Express"],
     category: "mern",
-    image: "/images/ecommerce.jpg", // Replace with your image path
+    image: "/src/assets/spotfli.png", 
     github: "https://github.com/yourusername/ecommerce-app",
     live: "https://yourappdemo.com"
   },
@@ -20,27 +20,27 @@ const projectsData = [
     description: "Real-time task manager with drag-and-drop functionality and team collaboration features.",
     tags: ["React", "Firebase", "Material UI"],
     category: "mern",
-    image: "/images/taskapp.jpg",
+    image: "src/assets/taskMe.png",
     github: "https://github.com/yourusername/task-app",
     live: "https://taskappdemo.com"
   },
   {
     id: 3,
-    title: "Corporate WordPress Theme",
-    description: "Custom WordPress theme for business websites with SEO optimization and responsive design.",
-    tags: ["WordPress", "PHP", "CSS", "JavaScript"],
+    title: "Vending Machine Store",
+    description: "An SEO friendly website that enables users to buy vending machines worldwide and make payment through any electronic payment gateway.",
+    tags: ["WordPress", "PHP", "Woocommerce"],
     category: "wordpress",
-    image: "/images/wp-theme.jpg",
+    image: "/src/assets/vendingmachine.png",
     github: "https://github.com/yourusername/wp-theme",
     live: "https://clientwebsite.com"
   },
   {
     id: 4,
-    title: "WooCommerce Store",
-    description: "Custom WordPress e-commerce site with WooCommerce integration and custom payment gateway.",
+    title: "Harley Parts Shop",
+    description: "A website that enables people to order or buy Harley Davidson motorcycle parts and make payment through any electronic payment gateway.",
     tags: ["WordPress", "WooCommerce", "PHP"],
     category: "wordpress",
-    image: "/images/woocommerce.jpg",
+    image: "/src/assets/harleyshop.png",
     github: "https://github.com/yourusername/woocommerce-store",
     live: "https://storeclient.com"
   }
@@ -86,7 +86,26 @@ const Projects = () => {
             <div key={project.id} className={styles.projectCard}>
               <div className={styles.projectImage}>
                 <img src={project.image} alt={project.title} />
-                <div className={styles.overlay}></div>
+                <div className={styles.overlay}>
+                  <div className={styles.projectLinks}>
+                    <a 
+                      href={project.github} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className={styles.projectLink}
+                    >
+                      <FiGithub size={20} />
+                    </a>
+                    <a 
+                      href={project.live} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className={styles.projectLink}
+                    >
+                      <FiExternalLink size={20} />
+                    </a>
+                  </div>
+                </div>
               </div>
               
               <div className={styles.projectInfo}>
@@ -97,25 +116,6 @@ const Projects = () => {
                   {project.tags.map((tag, index) => (
                     <span key={index} className={styles.tag}>{tag}</span>
                   ))}
-                </div>
-                
-                <div className={styles.projectLinks}>
-                  <a 
-                    href={project.github} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className={styles.projectLink}
-                  >
-                    <FiGithub /> Code
-                  </a>
-                  <a 
-                    href={project.live} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className={styles.projectLink}
-                  >
-                    <FiExternalLink /> Live Demo
-                  </a>
                 </div>
               </div>
             </div>

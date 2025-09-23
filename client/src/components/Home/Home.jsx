@@ -1,13 +1,19 @@
 import React from 'react';
 import styles from './Home.module.css';
-import profileImage from '../../assets/foncho.png'; // Your profile image
-import { Link } from 'react-router-dom';
+import profileImage from '../../assets/fonchopicture.jpg';
 
 const Home = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className={styles.home}>
+    <section id="home" className={styles.home}>
       {/* Hero Section */}
-      <section id="home" className={styles.hero}>
+      <div className={styles.hero}>
         <div className={styles.heroContent}>
           <div className={styles.textContent}>
             <h1 className={styles.heading}>
@@ -21,26 +27,32 @@ const Home = () => {
               clean code and exceptional user experiences.
             </p>
             <div className={styles.ctaButtons}>
-              <Link to="/projects" className={styles.primaryButton}>
+              <button 
+                onClick={() => scrollToSection('projects')} 
+                className={styles.primaryButton}
+              >
                 View My Work
-              </Link>
-              <Link to="/contact" className={styles.secondaryButton}>
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact')} 
+                className={styles.secondaryButton}
+              >
                 Contact Me
-              </Link>
+              </button>
             </div>
           </div>
           <div className={styles.imageContainer}>
             <img 
-              src={profileImage} 
+              src={profileImage}
               alt="Foncho Afanwi" 
               className={styles.profileImage}
             />
           </div>
         </div>
-      </section>
+      </div>
 
       {/* Short About Preview */}
-      <section className={styles.aboutPreview}>
+      <div className={styles.aboutPreview}>
         <h2 className={styles.sectionTitle}>What I Do</h2>
         <div className={styles.services}>
           <div className={styles.serviceCard}>
@@ -63,8 +75,8 @@ const Home = () => {
             </p>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 
