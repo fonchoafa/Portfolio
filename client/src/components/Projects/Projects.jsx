@@ -11,8 +11,8 @@ const projectsData = [
     tags: ["React", "Node.js", "MongoDB", "Express"],
     category: "mern",
     image: "/src/assets/spotfli.png", 
-    github: "https://github.com/yourusername/ecommerce-app",
-    live: "https://yourappdemo.com"
+    github: "https://github.com/Miraedge-sudo/Project-Spotfli",
+    // live: "https://yourappdemo.com"
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ const projectsData = [
     tags: ["React", "Firebase", "Material UI"],
     category: "mern",
     image: "src/assets/taskMe.png",
-    github: "https://github.com/yourusername/task-app",
-    live: "https://taskappdemo.com"
+    github: "https://github.com/fonchoafa/task-management-system",
+    // live: "https://taskappdemo.com"
   },
   {
     id: 3,
@@ -31,8 +31,8 @@ const projectsData = [
     tags: ["WordPress", "PHP", "Woocommerce"],
     category: "wordpress",
     image: "/src/assets/vendingmachine.png",
-    github: "https://github.com/yourusername/wp-theme",
-    live: "https://clientwebsite.com"
+    // github: "https://github.com/yourusername/wp-theme",
+    live: "https://bestvendingmachinestore.com/"
   },
   {
     id: 4,
@@ -41,8 +41,8 @@ const projectsData = [
     tags: ["WordPress", "WooCommerce", "PHP"],
     category: "wordpress",
     image: "/src/assets/harleyshop.png",
-    github: "https://github.com/yourusername/woocommerce-store",
-    live: "https://storeclient.com"
+    // github: "https://github.com/yourusername/woocommerce-store",
+    live: "https://harleypartsshop.com/"
   }
 ];
 

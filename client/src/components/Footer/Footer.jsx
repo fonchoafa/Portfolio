@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaArrowUp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaMapMarkerAlt, FaArrowUp, FaFacebook } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
-
-  const handleEmailClick = () => {
-    window.location.href = "mailto:fonchoafa@gmail.com";
-  };
 
   const checkScrollTop = () => {
     setShowBackToTop(window.scrollY > 300);
@@ -59,7 +55,7 @@ const Footer = () => {
           <h4 className={styles.socialTitle}>Connect With Me</h4>
           <div className={styles.socialLinks}>
             <a
-              href="https://github.com/fonchoafanwi"
+              href="https://github.com/fonchoafa"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -68,7 +64,7 @@ const Footer = () => {
               <FaGithub className={styles.socialIcon} />
             </a>
             <a
-              href="https://linkedin.com/in/fonchoafanwi"
+              href="https://www.linkedin.com/in/foncho-afa/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -77,7 +73,7 @@ const Footer = () => {
               <FaLinkedin className={styles.socialIcon} />
             </a>
             <a
-              href="https://twitter.com/fonchoafanwi"
+              href="https://x.com/fonchoafa"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
@@ -86,12 +82,13 @@ const Footer = () => {
               <FaTwitter className={styles.socialIcon} />
             </a>
             <a
-              href="mailto:fonchoafa@gmail.com"
-              aria-label="Email"
+              href="https://web.facebook.com/foncho.alfa"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
               className={styles.socialLink}
-              onClick={handleEmailClick}
             >
-              <FaEnvelope className={styles.socialIcon} />
+              <FaFacebook className={styles.socialIcon} />
             </a>
           </div>
         </div>

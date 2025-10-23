@@ -9,9 +9,11 @@ const About = () => {
         <div className={styles.content}>
           <div className={styles.text}>
             <p className={styles.bio}>
-              I'm a recent Software Engineering graduate specializing in the MERN stack 
-              and WordPress design. I build scalable web apps and stunning CMS websites 
-              with a focus on clean code and user experience.
+              As a recent Software Engineering graduate, I specialize in MERN
+              stack development and PHP-based WordPress design. I build scalable
+              web applications and stunning CMS websites, delivering clean code
+              and exceptional user experiences across both JavaScript and PHP
+              ecosystems.
             </p>
             <div className={styles.skills}>
               <h3 className={styles.skillsTitle}>Technologies I Work With:</h3>
@@ -23,6 +25,7 @@ const About = () => {
                 <span className={styles.skill}>JavaScript</span>
                 <span className={styles.skill}>WordPress</span>
                 <span className={styles.skill}>PHP</span>
+                <span className={styles.skill}>Laravel</span>
                 <span className={styles.skill}>CSS3</span>
                 <span className={styles.skill}>HTML5</span>
                 <span className={styles.skill}>Git</span>

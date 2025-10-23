@@ -1,15 +1,20 @@
 .home {
-  padding-top: 80px; /* Offset for fixed navbar */
+  padding-top: 80px; 
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-/* Hero Section */
+/* Hero Section - NO HORIZONTAL PADDING */
 .hero {
   min-height: calc(100vh - 80px);
   display: flex;
   align-items: center;
-  background-color: #0a192f; /* Changed to #112240 */
+  background-color: #0a192f;
   color: #ccd6f6;
-  padding: 0 2rem;
+  padding: 0; /* REMOVED: 0 2rem */
+  width: 100%;
+  margin: 0;
 }
 
 .heroContent {
@@ -20,6 +25,7 @@
   margin: 0 auto;
   width: 100%;
   gap: 4rem;
+  padding: 0 2rem; /* Padding only on content container */
 }
 
 .textContent {
@@ -101,17 +107,23 @@
   box-shadow: 0 0 30px rgba(100, 255, 218, 0.2);
 }
 
-/* About Preview Section - REDUCED SPACING */
+/* About Preview Section - NO HORIZONTAL PADDING */
 .aboutPreview {
-  padding: 4rem 2rem; /* Reduced from 6rem */
-  background-color: #112240; /* Main background color */
+  padding: 4rem 0; /* REMOVED: 4rem 2rem */
+  background-color: #112240;
+  width: 100%;
+  margin: 0;
 }
 
 .sectionTitle {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 3rem; /* Reduced from 4rem */
+  margin-bottom: 3rem;
   color: #ccd6f6;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem; /* Padding only on title */
 }
 
 .services {
@@ -120,10 +132,11 @@
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem; /* Padding only on services container */
 }
 
 .serviceCard {
-  background-color: #0a192f; /* Card background - darker blue */
+  background-color: #0a192f;
   padding: 2rem;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -131,7 +144,7 @@
 }
 
 .serviceCard:hover {
-  transform: translateY(-5px); /* Reduced hover effect */
+  transform: translateY(-5px);
 }
 
 .serviceCard h3 {
@@ -150,7 +163,7 @@
   .heroContent {
     flex-direction: column;
     text-align: center;
-    padding-top: 4rem; /* Reduced padding */
+    padding-top: 4rem;
   }
 
   .textContent {
@@ -166,11 +179,19 @@
   .profileImage {
     width: 280px;
     height: 280px;
-    margin-top: 2rem; /* Reduced margin */
+    margin-top: 2rem;
   }
   
   .aboutPreview {
-    padding: 3rem 1.5rem; /* Reduced padding for mobile */
+    padding: 3rem 0;
+  }
+  
+  .services {
+    padding: 0 1.5rem;
+  }
+  
+  .sectionTitle {
+    padding: 0 1.5rem;
   }
 }
 
@@ -195,11 +216,21 @@
   }
   
   .aboutPreview {
-    padding: 2rem 1rem; /* Further reduced for mobile */
+    padding: 2rem 0;
   }
   
   .sectionTitle {
     font-size: 2rem;
     margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .services {
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+  }
+  
+  .heroContent {
+    padding: 0 1rem;
   }
 }
