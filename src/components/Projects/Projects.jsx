@@ -10,7 +10,7 @@ const projectsData = [
     description: "A secure digital real estate platform where people can find and rent properties, make hotel reservations and book trusted service providers.",
     tags: ["React", "Node.js", "MongoDB", "Express"],
     category: "mern",
-    image: "/src/assets/spotfli.png", 
+    image: "/images/spotfli.png", 
     github: "https://github.com/Miraedge-sudo/Project-Spotfli",
     // live: "https://yourappdemo.com"
   },
@@ -20,7 +20,7 @@ const projectsData = [
     description: "Real-time task manager with drag-and-drop functionality and team collaboration features.",
     tags: ["React", "Firebase", "Material UI"],
     category: "mern",
-    image: "src/assets/taskMe.png",
+    image: "/images/taskMe.png",
     github: "https://github.com/fonchoafa/task-management-system",
     // live: "https://taskappdemo.com"
   },
@@ -30,7 +30,7 @@ const projectsData = [
     description: "An SEO friendly website that enables users to buy vending machines worldwide and make payment through any electronic payment gateway.",
     tags: ["WordPress", "PHP", "Woocommerce"],
     category: "wordpress",
-    image: "/src/assets/vendingmachine.png",
+    image: "/images/vendingmachine.png",
     // github: "https://github.com/yourusername/wp-theme",
     live: "https://bestvendingmachinestore.com/"
   },
@@ -40,7 +40,7 @@ const projectsData = [
     description: "A website that enables people to order or buy Harley Davidson motorcycle parts and make payment through any electronic payment gateway.",
     tags: ["WordPress", "WooCommerce", "PHP"],
     category: "wordpress",
-    image: "/src/assets/harleyshop.png",
+    image: "/images/harleyshop.png",
     // github: "https://github.com/yourusername/woocommerce-store",
     live: "https://harleypartsshop.com/"
   }

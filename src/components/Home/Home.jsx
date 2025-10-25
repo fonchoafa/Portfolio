@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Home.module.css';
-import profileImage from '../../assets/fonchopicture.jpg';
+import profileImage from '/images/fonchopicture.jpg';
 
 const Home = () => {
   const scrollToSection = (sectionId) => {
