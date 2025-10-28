@@ -8,7 +8,6 @@ const Navbar = () => {
 
   // Close mobile menu when clicking a link
   const closeMenu = () => setIsMenuOpen(false);
-
   // Navbar scroll effect
   useEffect(() => {
     const handleScroll = () => {

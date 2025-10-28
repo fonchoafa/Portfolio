@@ -3,16 +3,19 @@
   top: 0;
   left: 0;
   right: 0;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   background-color: rgba(10, 25, 47, 0.95);
   backdrop-filter: blur(10px);
   z-index: 1000;
   transition: all 0.3s ease;
+  height: 80px; /* Fixed height */
+  box-sizing: border-box;
 }
 
 .scrolled {
-  padding: 2rem 0;
+  padding: 1rem 0;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  height: 70px; /* Consistent reduced height */
 }
 
 .container {
@@ -22,6 +25,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  height: 100%;
 }
 
 .logo {
@@ -120,6 +124,7 @@
   background: #64ffda;
   transition: all 0.3s ease;
   border-radius: 2px;
+  transform-origin: center;
 }
 
 .line1 {
@@ -206,16 +211,6 @@
   z-index: -1;
 }
 
-/* Mobile menu close button area */
-.mobileMenu::after {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  color: #64ffda;
-  font-size: 2.5rem;
-  cursor: pointer;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {
@@ -233,6 +228,16 @@
   .logo {
     font-size: 1.6rem;
   }
+  
+  .navbar {
+    padding: 1rem 0;
+    height: 70px; /* Must match home padding-top */
+  }
+  
+  .scrolled {
+    padding: 0.8rem 0;
+    height: 60px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -241,11 +246,13 @@
   }
   
   .navbar {
-    padding: 1rem 0;
+    padding: 0.8rem 0;
+    height: 60px; /* Must match home padding-top */
   }
   
   .scrolled {
-    padding: 0.8rem 0;
+    padding: 0.6rem 0;
+    height: 55px;
   }
   
   .logo {
