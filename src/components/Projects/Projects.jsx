@@ -12,7 +12,7 @@ const projectsData = [
     category: "mern",
     image: "/images/spotfli.png", 
     github: "https://github.com/Miraedge-sudo/Project-Spotfli",
-    // live: "https://yourappdemo.com"
+    live: "https://www.spotfli.com/"
   },
   {
     id: 2,
@@ -24,8 +24,18 @@ const projectsData = [
     github: "https://github.com/fonchoafa/task-management-system",
     // live: "https://taskappdemo.com"
   },
-  {
+    {
     id: 3,
+    title: "Post Blogging Platform",
+    description: "A platform for creating and managing blog posts with real-time collaboration features.",
+    tags: ["React", "Express", "MongoDB", "Node.js"],
+    category: "mern",
+    image: "/images/covedaBlog.png",
+    github: "https://github.com/fonchoafa/codveda-internship.git",
+    live: "https://codveda-internship-three.vercel.app/"
+  },
+  {
+    id: 4,
     title: "Vending Machine Store",
     description: "An SEO friendly website that enables users to buy vending machines worldwide and make payment through any electronic payment gateway.",
     tags: ["WordPress", "PHP", "Woocommerce"],
@@ -35,7 +45,7 @@ const projectsData = [
     live: "https://bestvendingmachinestore.com/"
   },
   {
-    id: 4,
+    id: 5,
     title: "Harley Parts Shop",
     description: "A website that enables people to order or buy Harley Davidson motorcycle parts and make payment through any electronic payment gateway.",
     tags: ["WordPress", "WooCommerce", "PHP"],

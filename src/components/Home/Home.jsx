@@ -39,7 +39,7 @@ const Home = () => {
               Software Engineer
             </h2>
             <p className={styles.description}>
-              I build modern web applications using the MERN stack, develop custom WordPress solutions with PHP, and deliver clean code with exceptional user experiences across all platforms.
+              I build modern web applications using the MERN stack, Laravel and develop custom WordPress solutions with PHP, and deliver clean code with exceptional user experiences across all platforms.
             </p>
             <div className={styles.ctaButtons}>
               <button 

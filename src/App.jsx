@@ -6,6 +6,7 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import Certification from './components/Certifications/Certification';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +32,7 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Certification />
         <Contact />
       </main>
       <Footer />
