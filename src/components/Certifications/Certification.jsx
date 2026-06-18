@@ -42,6 +42,17 @@ const certificationsData = [
     skills: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'React', 'PHP', 'DBMS', 'AI in Web Development'],
     verifyUrl: 'https://trainings.internshala.com/verify_certificate',
   },
+  {
+    id: 4,
+    title: 'Web Development with Certification',
+    issuer: 'Unlox Acedemy',
+    date: 'April 2025 - June 2026',
+    credentialId: 'UNXWT-TNT-1678',
+    description:
+      'Rigorous training focused on utilizing AI models and workflows to streamline frontend interfaces, backend application logic, and modern web application development.',
+    skills: ['AI Tools Integration', 'Web Development', 'Frontend Development', 'Backend Development', 'Software Workflows'],
+    verifyUrl: 'https://unlox.com', 
+  },
 ];
 
 const Certification = () => {

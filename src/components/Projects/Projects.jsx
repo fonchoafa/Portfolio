@@ -3,6 +3,7 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 import styles from "./Projects.module.css";
 
 // Project data
+// Project data
 const projectsData = [
   {
     id: 1,
@@ -16,6 +17,16 @@ const projectsData = [
   },
   {
     id: 2,
+    title: "Wisdom Market Place",
+    description: "A multi-vendor e-commerce web platform and downloadable Android application tailored for local businesses and service providers.",
+    tags: ["TypeScript", "PHP", "Supabase", "Tailwind CSS"], 
+    category: "mern", 
+    image: "/images/wisdom-market.png", 
+    github: "https://github.com/Miraedge-sudo/wisdom-market.git", 
+    live: "https://wisdom-marketplace.com/" // Changed 'liveLink' to 'live'
+  },
+  {
+    id: 3,
     title: "Task Management App",
     description: "Real-time task manager with drag-and-drop functionality and team collaboration features.",
     tags: ["React", "Firebase", "Material UI"],
@@ -24,8 +35,8 @@ const projectsData = [
     github: "https://github.com/fonchoafa/task-management-system",
     // live: "https://taskappdemo.com"
   },
-    {
-    id: 3,
+  {
+    id: 4,
     title: "Post Blogging Platform",
     description: "A platform for creating and managing blog posts with real-time collaboration features.",
     tags: ["React", "Express", "MongoDB", "Node.js"],
@@ -35,7 +46,7 @@ const projectsData = [
     live: "https://codveda-internship-three.vercel.app/"
   },
   {
-    id: 4,
+    id: 5,
     title: "Vending Machine Store",
     description: "An SEO friendly website that enables users to buy vending machines worldwide and make payment through any electronic payment gateway.",
     tags: ["WordPress", "PHP", "Woocommerce"],
@@ -45,7 +56,7 @@ const projectsData = [
     live: "https://bestvendingmachinestore.com/"
   },
   {
-    id: 5,
+    id: 6,
     title: "Harley Parts Shop",
     description: "A website that enables people to order or buy Harley Davidson motorcycle parts and make payment through any electronic payment gateway.",
     tags: ["WordPress", "WooCommerce", "PHP"],
@@ -55,6 +66,7 @@ const projectsData = [
     live: "https://harleypartsshop.com/"
   }
 ];
+
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");

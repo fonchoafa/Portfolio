@@ -41,8 +41,8 @@ const Home = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = 'Foncho_Afanwi_Ngwa(Resume).pdf';
-    link.download = 'Foncho_Afanwi_Ngwa(Resume).pdf';
+    link.href = 'Foncho_Afanwi_Ngwa-CM(Resume).pdf';
+    link.download = 'Foncho_Afanwi_Ngwa-CM(Resume).pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
